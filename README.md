@@ -19,6 +19,10 @@ yarn
 ```
 
 ```bash
+npx prisma migrate dev --name init
+```
+
+```bash
 yarn start:dev
 ```
 
