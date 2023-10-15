@@ -1,12 +1,27 @@
 # nestjs-prisma-crud
 
-Это шаблон проекта, который объединяет фреймворк NestJS, ORM Prisma и функциональность CRUD (Create, Read, Update, Delete).
+This is a project template that combines the NestJS framework, ORM Prisma and CRUD (Create, Read, Update, Delete) functionality.
 
-Этот проект предоставляет удобную и эффективную основу для создания веб-приложений, используя принципы CRUD. Он автоматически генерирует код для выполнения базовых операций CRUD над данными, что позволяет сосредоточиться на разработке бизнес-логики и пользовательского интерфейса.
+This project provides a convenient and efficient framework for creating web applications using CRUD principles. It automatically generates code to perform basic CRUD operations on data, allowing you to focus on developing business logic and user interface.
 
-Проект nestjs-prisma-crud включает следующие особенности:
-- Интеграцию с фреймворком NestJS, который предоставляет мощные инструменты для создания веб-приложений на Node.js.
-- Возможность использования ORM Prisma для работы с базой данных. Prisma предоставляет удобные методы для выполнения запросов и манипуляций с данными в базе данных.
-- Автоматическую генерацию кода для выполнения операций CRUD. Это позволяет сократить время разработки и уменьшить вероятность ошибок.
+### The nestjs-prisma-crud project includes the following features:
 
-В результате, проект nestjs-prisma-crud предоставляет простую и эффективную основу для создания веб-приложений с CRUD функциональностью, сокращая время разработки и упрощая поддержку приложения.
+- Integration with the NestJS framework, which provides powerful tools for building web applications on Node.js.
+- Ability to use Prisma's ORM to work with the database. Prisma provides convenient methods for querying and manipulating data in the database.
+- Automatic code generation to perform CRUD operations. This reduces development time and reduces the possibility of errors.
+
+As a result, the nestjs-prisma-crud project provides a simple and efficient framework for building web applications with CRUD functionality, reducing development time and simplifying application maintenance.
+
+## How to start
+
+```bash
+yarn
+```
+
+```bash
+yarn start:dev
+```
+
+```bash
+yarn start
+```
