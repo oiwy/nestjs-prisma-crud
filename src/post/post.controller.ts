@@ -13,7 +13,7 @@ import { Post as PostModel, Prisma } from '@prisma/client';
 
 @Controller('post')
 export class PostController {
-  constructor(private readonly postService: PostService) { }
+  constructor(private readonly postService: PostService) {}
 
   @Get('feed')
   async getPublishedPosts(): Promise<PostModel[]> {
