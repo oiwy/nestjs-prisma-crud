@@ -13,7 +13,7 @@ import { Post as PostModel, Prisma } from '@prisma/client';
 
 @Controller('post')
 export class PostController {
-  constructor(private readonly postService: PostService) {}
+  constructor(private readonly postService: PostService) { }
 
   @Get('feed')
   async getPublishedPosts(): Promise<PostModel[]> {
@@ -23,7 +23,7 @@ export class PostController {
   }
 
   @Get(':id')
-  async getPostById(@Param('id') id: string): Promise<PostModel> {
+  async getPostById(@Param('id') id: number): Promise<PostModel> {
     return this.postService.post({ id: Number(id) });
   }
 
