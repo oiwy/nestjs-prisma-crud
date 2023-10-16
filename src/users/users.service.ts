@@ -6,7 +6,7 @@ import { User } from '@prisma/client';
 
 @Injectable()
 export class UsersService {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(private readonly prismaService: PrismaService) { }
 
   async findAll(): Promise<User[]> {
     return this.prismaService.user.findMany();
@@ -20,22 +20,22 @@ export class UsersService {
     });
   }
 
-  async createUser(createUserDto: CreateUserDto): Promise<User> {
+  async createUser(data: CreateUserDto): Promise<User> {
     return this.prismaService.user.create({
-      data: createUserDto,
+      data,
     });
   }
 
-  async updateUser(id: number, updateUserDto: UpdateUserDto): Promise<User> {
+  async updateUser(id: number, data: UpdateUserDto): Promise<User> {
     return this.prismaService.user.update({
       where: {
         id,
       },
-      data: updateUserDto,
+      data,
     });
   }
 
-  async removeUser(id: number): Promise<User> {
+  async deleteUser(id: number): Promise<User> {
     return this.prismaService.user.delete({
       where: {
         id,
